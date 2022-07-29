@@ -1,0 +1,22 @@
+{
+  "name": "katas",
+  "version": "1.0.0",
+  "description": "Collections of katas in JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EduDG98/JS-Katas.git"
+  },
+  "author": "eduardo Diaz-Gonzalez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EduDG98/JS-Katas/issues"
+  },
+  "homepage": "https://github.com/EduDG98/JS-Katas#readme",
+  "devDependencies": {
+    "jest": "^28.1.3"
+  }
+}
