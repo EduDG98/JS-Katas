@@ -1,9 +1,10 @@
-const anagramsModule = require('./anagram');
+import { anagrams } from './anagram';
 
-const { anagrams } = anagramsModule;
+// const anagramsModule = require('./anagram');
+// const { anagrams } = anagramsModule;
 
 describe("Anagrams", () => {
-    it.skip("should return a list of all anagrams - I", () => {
+    it("should return a list of all anagrams - I", () => {
         // AAA
         // Arrange - configuras el test
         const word = 'abba';

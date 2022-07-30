@@ -1,4 +1,4 @@
-const anagrams = (word, listOfWords) => {
+export const anagrams = (word, listOfWords) => {
   const splitedMainWord = word.split('').sort().join();
   const joinedWords = [];
   listOfWords.map((item, index) => {
@@ -9,6 +9,3 @@ const anagrams = (word, listOfWords) => {
   return joinedWords;
 };
 
-module.exports = {
-  anagrams
-}

@@ -19,5 +19,10 @@
   "homepage": "https://github.com/EduDG98/JS-Katas#readme",
   "devDependencies": {
     "jest": "^28.1.3"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
   }
 }
