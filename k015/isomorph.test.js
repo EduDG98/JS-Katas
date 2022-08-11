@@ -11,7 +11,7 @@ describe('isomorph', () => {
     })
     it('should return true when both string change character at the same position - II', () => {
         const stringToTestOne = 'COOLOOC';
-        const stringToTestTwo = 'LEETAAF';
+        const stringToTestTwo = 'LEETEEL';
 
         const sut = isomorph(stringToTestOne, stringToTestTwo);
 
@@ -65,7 +65,7 @@ describe('isomorph', () => {
 
         const sut = isomorph(stringToTestOne, stringToTestTwo);
 
-        expect(sut).toBeTruthy();
+        expect(sut).toBeFalsy();
     })
     it('should return true when both string change character at the same position - V', () => {
         const stringToTestOne = 'bmhvtzm';
@@ -73,7 +73,7 @@ describe('isomorph', () => {
 
         const sut = isomorph(stringToTestOne, stringToTestTwo);
 
-        expect(sut).toBeTruthy();
+        expect(sut).toBeFalsy();
     })
     it('should return true when both string change character at the same position - VI', () => {
         const stringToTestOne = 'gflo';
@@ -81,7 +81,7 @@ describe('isomorph', () => {
 
         const sut = isomorph(stringToTestOne, stringToTestTwo);
 
-        expect(sut).toBeTruthy();
+        expect(sut).toBeFalsy();
     })
     it('should return true when both string change character at the same position - VII', () => {
         const stringToTestOne = 'pjpmt';
@@ -89,7 +89,7 @@ describe('isomorph', () => {
 
         const sut = isomorph(stringToTestOne, stringToTestTwo);
 
-        expect(sut).toBeTruthy();
+        expect(sut).toBeFalsy();
     })
     it('should return true when both string change character at the same position - VIII', () => {
         const stringToTestOne = 'hojhjma';
@@ -97,7 +97,7 @@ describe('isomorph', () => {
 
         const sut = isomorph(stringToTestOne, stringToTestTwo);
 
-        expect(sut).toBeTruthy();
+        expect(sut).toBeFalsy();
     })
     it('should return true when both string change character at the same position - IX', () => {
         const stringToTestOne = 'xsjuwt';
@@ -105,6 +105,6 @@ describe('isomorph', () => {
 
         const sut = isomorph(stringToTestOne, stringToTestTwo);
 
-        expect(sut).toBeTruthy();
+        expect(sut).toBeFalsy();
     })
 })
