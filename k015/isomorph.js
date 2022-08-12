@@ -55,8 +55,8 @@ const checkArrayAreIdentical = (arrayToTestOne, arrayToTestTwo) => arrayToTestOn
 
 
 
-const string1 = 'COOLOOC';
-const string2 = 'LEETAAL';
+const string1 = 'papa';
+const string2 = 'mama';
 const array1 = [...string1];
 const array2 = [...string2];
 
