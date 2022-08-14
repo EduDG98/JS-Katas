@@ -1,25 +1,16 @@
 const meeting = string => {
-    const finalArray = [];
     const listOfNames = string.toUpperCase().split(';');
-    const list = listOfNames.reduce((accumulator, item) => {
-        accumulator[item.split(':')[0]] = item.slice(item.indexOf(':') + 1);
-        return accumulator;
-    }, {});
-    const firstNameList = Object.keys(list).sort(); console.log(firstNameList);
-    const lastNameList = Object.values(list).sort(); console.log(lastNameList);
-    lastNameList.map((item, index, array) => {
-        for (let i = 0; i < Object.values(list).length; i++) {
-            console.log(Object.values(list)[i])
-            if (Object.values(list)[i] === array[index]) {
-                console.log(item);
-            }
-
-        }
+    const firstNameList = listOfNames.map(item => item.slice(0, item.indexOf(':')));
+    const lastNameList = listOfNames.map(item => item.slice(item.indexOf(':') + 1));
+    const lastNameFirstNameList = lastNameList.map((item, index) => item + '-' + firstNameList[index])
+    const sortedList = lastNameFirstNameList.sort();
+    const styledList = sortedList.map((item, index) => {
+        return '(' + item.replace('-', ', ') + ')'
     })
-    return list
+    return styledList.join('');
 }
 
-const exampleString = 'manolo:lopez;ana:lopez;juan:diaz;mar:diaz'
+const exampleString = "Alexis:Wahl;John:Bell;Victoria:Schwarz;Abba:Dorny;Grace:Meta;Ann:Arno;Madison:STAN;Alex:Cornwell;Lewis:Kern;Megan:Stan;Alex:Korn"
 const result = meeting(exampleString);
 console.log(result);
 
